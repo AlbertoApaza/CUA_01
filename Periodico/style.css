@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+.article h1 {
+    text-align: center; 
+}
+
+.article img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+body {
+ background-image: url(/IMG/fondo.jfif);
+  background-blend-mode: normal;
+  background-size: fill;
+  display: grid;
+  place-items: center;
+  
+  font-size: 16px;
+  font-family: Libre Baskeville, serif;
+  
+  .page {
+    margin: 8vh 8vw;
+    background: white;
+    border-radius: 1em;
+    padding: 1.5em 2em;
+    
+    .article {
+      column-count: 2;
+      
+      .article__image {
+        max-width: 100%;
+      }
+      
+      .article__content {
+        margin-top: .25em;
+        font-size: 1.3em;
+      
+       
+      }
+    }
+  }
+}
