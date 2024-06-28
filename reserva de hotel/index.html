@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva en Sueños del Mar</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Reserva en Sueños del Mar</h1>
+        <form action="/submit-reservation" method="post">
+            <label for="full-name">Nombre completo</label>
+            <input type="text" id="full-name" name="full-name" pattern="[A-Za-zÀ-ÿ\s]+" title="El nombre completo no puede contener números" required>
+            <span class="error" id="full-name-error"></span>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="check-in-date">Fecha de llegada</label>
+            <input type="date" id="check-in-date" name="check-in-date" required>
+
+            <label for="check-out-date">Fecha de salida</label>
+            <input type="date" id="check-out-date" name="check-out-date" required>
+
+            <label for="room-type">Tipo de habitación</label>
+            <select id="room-type" name="room-type" required>
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <div class="radio-group">
+                <label>Preferencias de cama</label>
+                <label><input type="radio" name="bed-preference" value="una-cama-grande" required> Una cama grande</label>
+                <label><input type="radio" name="bed-preference" value="dos-camas-pequeñas" required> Dos camas pequeñas</label>
+            </div>
+
+            <label for="additional-comments">Comentarios adicionales</label>
+            <textarea id="additional-comments" name="additional-comments" rows="4"></textarea>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+</body>
+
+</html>
