@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>Formulario de Registro</h2>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" title="El nombre solo puede contener letras y espacios.">
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required pattern="[A-Za-z\s]+" title="El apellido solo puede contener letras y espacios.">
+        </div>
+        <div>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required pattern="\d{8}" title="El DNI debe tener 8 dígitos.">
+        </div>
+        <div>
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="">Seleccione una carrera</option>
+                <option value="Analisis de Sistema">Analisis de Sistema</option>
+                <option value="Produccion Agraria">Produccion Agraria</option>
+                <option value="derecho">Derecho</option>
+                <option value="arquitectura">Arquitectura</option>
+            </select>
+        </div>
+        <div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required pattern="^[^\s@]+@[^\s@]+$" title="El correo electrónico debe contener un '@'.">
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="terminos" name="terminos"  required>
+            <label for="terminos">Acepto todas las condiciones</label>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
