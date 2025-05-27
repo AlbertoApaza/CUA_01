@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "711bdb45-ef91-427b-8b9f-12e373309cc4",
+		"name": "SQL_SERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43465731",
+		"_collection_link": "https://alberto-4272860.postman.co/workspace/SQL_SERVER~90a77966-6ffd-4e53-87c5-b604b2a5c35d/collection/43465731-711bdb45-ef91-427b-8b9f-12e373309cc4?action=share&source=collection_link&creator=43465731"
+	},
+	"item": [
+		{
+			"name": "FOLDER",
+			"item": [
+				{
+					"name": "CREATE| Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dni\": \"12345678\",\r\n  \"firstName\": \"Pepito\",\r\n  \"lastName\": \"Salazar\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://ominous-guide-q7qp6gvp7xxpcxvrp-8085.app.github.dev/v1/api/customer/save",
+							"protocol": "https",
+							"host": [
+								"ominous-guide-q7qp6gvp7xxpcxvrp-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ | Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuzzy-space-telegram-7v9pw47pv5x92x97w-8085.app.github.dev/customer",
+							"protocol": "https",
+							"host": [
+								"fuzzy-space-telegram-7v9pw47pv5x92x97w-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ | Listar x ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fuzzy-space-telegram-7v9pw47pv5x92x97w-8085.app.github.dev/customer/2",
+							"protocol": "https",
+							"host": [
+								"fuzzy-space-telegram-7v9pw47pv5x92x97w-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"customer",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE | Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"customerId\": 1,\r\n        \"customerName\": \"Enrique\",\r\n        \"lastName\": \"Ramírez López\",\r\n        \"customerAddress\": \"Av. Grau 123, Lima\",\r\n        \"phone\": \"987654321\",\r\n        \"email\": \"luis.ramirez@example.com\",\r\n        \"docNumber\": \"12345678\",\r\n        \"state\": \"A\",\r\n        \"documentType\": \"DNI\"\r\n    },",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuzzy-space-telegram-7v9pw47pv5x92x97w-8085.app.github.dev/customer/update",
+							"protocol": "https",
+							"host": [
+								"fuzzy-space-telegram-7v9pw47pv5x92x97w-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"customer",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE| Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fuzzy-space-telegram-7v9pw47pv5x92x97w-8085.app.github.dev/customer/delete/1",
+							"protocol": "https",
+							"host": [
+								"fuzzy-space-telegram-7v9pw47pv5x92x97w-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"customer",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESTORE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://fuzzy-space-telegram-7v9pw47pv5x92x97w-8085.app.github.dev/customer/restore/1",
+							"protocol": "https",
+							"host": [
+								"fuzzy-space-telegram-7v9pw47pv5x92x97w-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"customer",
+								"restore",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

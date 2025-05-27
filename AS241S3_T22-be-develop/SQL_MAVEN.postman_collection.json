@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "18240b88-a7db-4641-84a2-3a444469a7a3",
+		"name": "SQL_MAVEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43465790",
+		"_collection_link": "https://carlosguerrero-6899005.postman.co/workspace/SQL_SERVER~fe6cac9b-5860-4079-aec5-6245be228cdf/collection/43465790-18240b88-a7db-4641-84a2-3a444469a7a3?action=share&source=collection_link&creator=43465790"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"protocolVersion": "http1"
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fantastic-cod-496ggjw4vjq35xq5-8085.app.github.dev/product",
+					"protocol": "https",
+					"host": [
+						"fantastic-cod-496ggjw4vjq35xq5-8085",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fantastic-cod-496ggjw4vjq35xq5-8085.app.github.dev/product/11",
+					"protocol": "https",
+					"host": [
+						"fantastic-cod-496ggjw4vjq35xq5-8085",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"product",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"Cloruro de Potasio\",\r\n    \"productDescription\": \"Fertilizante potásico altamente soluble\",\r\n    \"expirationDate\": \"2027-02-17\",\r\n    \"unitOfMeasure\": \"KG\",\r\n    \"productPrice\": \"130.00\",\r\n    \"admissionDate\": \"2025-05-19\",\r\n    \"currentStock\": \"520\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fantastic-cod-496ggjw4vjq35xq5-8085.app.github.dev/product/save",
+					"protocol": "https",
+					"host": [
+						"fantastic-cod-496ggjw4vjq35xq5-8085",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"product",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"idProduct\": 2,\r\n    \"productName\": \"Urea 46%\",\r\n    \"productDescription\": \"Fertilizante nitrogenado de alta concentración para crecimiento vegetativo\",\r\n    \"expirationDate\": \"2027-06-30\",\r\n    \"unitOfMeasure\": \"KG\",\r\n    \"productPrice\": 18.75,\r\n    \"admissionDate\": \"2024-05-15\",\r\n    \"currentStock\": \"1200\",\r\n    \"state\": \"A\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fantastic-cod-496ggjw4vjq35xq5-8085.app.github.dev/product/update",
+					"protocol": "https",
+					"host": [
+						"fantastic-cod-496ggjw4vjq35xq5-8085",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fantastic-cod-496ggjw4vjq35xq5-8085.app.github.dev/product/delete/12",
+					"protocol": "https",
+					"host": [
+						"fantastic-cod-496ggjw4vjq35xq5-8085",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"product",
+						"delete",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RestoreById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://fantastic-cod-496ggjw4vjq35xq5-8085.app.github.dev/product/restore/12",
+					"protocol": "https",
+					"host": [
+						"fantastic-cod-496ggjw4vjq35xq5-8085",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"product",
+						"restore",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
